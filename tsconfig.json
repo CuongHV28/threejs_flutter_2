@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "sourceRoot": "./assets/threejs-house/",
+    "outDir": "./assets/threejs-house/compiled",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "ES5",
+    "module": "CommonJS", // Use ES modules
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "esModuleInterop": true // Enable interop between CommonJS and ES modules
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [ "assets/threejs-house/**/*" ]
+}

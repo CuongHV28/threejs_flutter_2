@@ -1,0 +1,69 @@
+<!-- assets/threejs/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js House</title>
+    <style>
+        .webgl {
+            margin-top: 0.3vh !important;
+            width: 100% !important; 
+            height: 100% !important; 
+            display: block; 
+            margin: auto; 
+            background: #757474; 
+        }
+    
+        .screenshot-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+    
+        .screenshot-label {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+    
+        .gap-10px {
+            gap: 10px;
+        }
+    
+        .gap-5px {
+            gap: 5px;
+        }
+
+        .btn-viewside {
+            background: #F1F5FD !important;
+            color: #4676FB !important;
+            border-radius: 100px !important;
+        }
+
+        .three-container {
+            height: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="three-container">
+        <canvas class="webgl"></canvas>
+    </div>
+    <!-- Add other scripts and assets as needed -->
+    <!-- <script src="/assets/threejs-house/compiled/index.js"></script> -->
+    <script src="bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let currentHouseSettings = {};
+        function showHouse(houseSettings) {
+            currentHouseSettings = houseSettings;
+            console.log('House settings received:', currentHouseSettings);
+            addHouseString(houseSettings);
+
+        }
+    </script>
+</body>
+</html>
