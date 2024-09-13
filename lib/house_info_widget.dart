@@ -179,7 +179,7 @@ class HouseWidgetState extends State<HouseWidget> {
                 Row(
                   children: [
                     Expanded(
-                      child: Column(
+                      child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text('Số tầng nổi: '),
@@ -243,10 +243,10 @@ class HouseWidgetState extends State<HouseWidget> {
                     ),
                     const SizedBox(width: 16),
                     Expanded(
-                      child: Column(
+                      child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Số tầng hầm'),
+                          const Text('Số tầng hầm: '),
                           Row(
                             children: [
                               Center(
